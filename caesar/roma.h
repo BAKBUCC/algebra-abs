@@ -4,30 +4,26 @@
 using namespace std;
 
 class caesar {
-	string mensaje;
+	string mensaje;//emisor
 	string abc;
-	string cifrado;
 	int desp;
-	int aux;
-	int pos;
 public:
 	caesar(string men, int des);
 	void code();
-	string Get_cifrado();
 };
 
 caesar::caesar(string men, int des) {
 	mensaje = men;
 	abc = "abcdefghijklmnopqrstuvwxyz";
-	cifrado = "";
 	desp = des;
-	aux = 0;
-	pos = 0;
 }
 
 void caesar::code() {
 	int i = 0;
+	int pos;
+	int aux = 0;
 	string::iterator prueba1;
+	string cifrado = "";
 	while (mensaje[i] != NULL) {
 		mensaje[i] = tolower(mensaje[i]);
 		aux = desp;
@@ -44,12 +40,10 @@ void caesar::code() {
 			cifrado.insert(cifrado.end(), *prueba1);
 		}
 		else {
-			cifrado.insert(cifrado.end(), ' ');
+			cifrado.insert(cifrado.end(), mensaje[i]);
 		}
 		i += 1;
 	}
-}
-
-string caesar::Get_cifrado() {
-	return cifrado;
+	cout << cifrado << endl;
+	cifrado = "";
 }

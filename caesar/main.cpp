@@ -11,5 +11,4 @@ int main() {
 	cin >> desp;
 	caesar dominus(mensaje, desp);
 	dominus.code();
-	cout << dominus.Get_cifrado();
 }
