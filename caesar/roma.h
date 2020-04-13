@@ -23,7 +23,7 @@ void caesar::code() {
 	int pos;
 	int aux = 0;
 	string::iterator prueba1;
-	string cifrado = "";
+	string cifrado ;
 	while (mensaje[i] != NULL) {
 		mensaje[i] = tolower(mensaje[i]);
 		aux = desp;
@@ -45,5 +45,4 @@ void caesar::code() {
 		i += 1;
 	}
 	cout << cifrado << endl;
-	cifrado = "";
 }
