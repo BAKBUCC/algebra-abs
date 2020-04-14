@@ -9,6 +9,7 @@ int main() {
 	int desp;
 	cout << "ingresa el despalzamiento: ";
 	cin >> desp;
-	caesar dominus(mensaje, desp);
-	dominus.code();
+	caesar dominus(desp);
+	dominus.casio(dominus.code(mensaje));
+	
 }
