@@ -1,0 +1,10 @@
+4a: debilidades del cifrado de cesar:
+	al ser simple solo se necesita un numero de intentos muy reducido y un poco de tiempo para poder romperlo.
+    fortalezas del cifrado de cesar:
+	sirve como introduccion al criptoanalisis.
+4b: debilidades del cifrado de vigenere:
+	la unica debilidad es que la clave en algun momento se tendra que pasar y en ese momento sera su unico punto
+	debil.
+    fortalezas del cifrado de vigenere:
+	es muy complicado descifrarla a no ser que sea con el metodo kasiski pero para usar ese metodo se necesitan 
+	situaciones muy particulares. asi q es un cifrado muy bueno.
