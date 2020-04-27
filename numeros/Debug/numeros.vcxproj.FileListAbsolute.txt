@@ -1,0 +1,2 @@
+C:\Users\Intel\source\repos\numeros\Debug\numeros.exe
+C:\Users\Intel\source\repos\numeros\Debug\numeros.pdb
