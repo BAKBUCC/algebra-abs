@@ -60,7 +60,7 @@ string caesar::code(string men) {
 			prueba1 = abc.begin() + pos;
 			while (aux != 0) {
 				prueba1 += 1;
-				if (prueba1 == abc.end()) {
+				if (prueba1 > abc.end()) {
 					prueba1 = abc.begin();
 				}
 				aux -= 1;
