@@ -1,0 +1,12 @@
+long long int expo_mod(unsigned long long int a, unsigned long long int b, unsigned long long int c) {
+    long long int exp = 1;
+    unsigned long long int x = a % c;
+    while (b > 0) {
+        if (modulo(b,2)== 1) {
+            exp = modulo((exp * x),c);
+        }
+        x = (x * x) % c;
+        b = (b/2);
+    }
+    return exp;
+}
